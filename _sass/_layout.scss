@@ -1,236 +1,340 @@
-/**
- * Site header
- */
-.site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
-
-    // Positioning context for the mobile navigation icon
-    position: relative;
+body {
+    min-width: 346px;
+    background-color: #dad0c2;
+    margin: 0;
 }
 
-.site-title {
-    font-size: 26px;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
+.wrapper {
+    margin: 6px auto 0 auto;
+    padding-left: 8%;
+}
 
-    &,
-    &:visited {
-        color: $grey-color-dark;
+
+/* HEADER CODE */
+header {
+    height: 90px;
+    background-color: #020222;
+    padding: 24px 18px 0 18px;
+    box-sizing: border-box;
+    img {
+        float: left;
+        margin: 0;
     }
-}
-
-.site-nav {
-    float: right;
-    line-height: 56px;
-
-    .menu-icon {
+    #wordmark {
+        visibility: hidden;
         display: none;
+        float: left;
     }
-
-    .page-link {
-        color: $text-color;
-        line-height: $base-line-height;
-
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 20px;
-        }
-    }
-
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
-
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-        }
-    }
-}
-
-
-
-/**
- * Site footer
- */
-.site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
-}
-
-.footer-heading {
-    font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
-}
-
-.contact-list,
-.social-media-list {
-    list-style: none;
-    margin-left: 0;
-}
-
-.footer-col-wrapper {
-    font-size: 15px;
-    color: $grey-color;
-    margin-left: -$spacing-unit / 2;
-    @extend %clearfix;
-}
-
-.footer-col {
-    float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-}
-
-.footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
-}
-
-@include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
-    }
-
-    .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
-}
-
-@include media-query($on-palm) {
-    .footer-col {
-        float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
-}
-
-
-
-/**
- * Page content
- */
-.page-content {
-    padding: $spacing-unit 0;
-}
-
-.page-heading {
-    font-size: 20px;
-}
-
-.post-list {
-    margin-left: 0;
-    list-style: none;
-
-    > li {
-        margin-bottom: $spacing-unit;
-    }
-}
-
-.post-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
-}
-
-.post-link {
-    display: block;
-    font-size: 24px;
-}
-
-
-
-/**
- * Posts
- */
-.post-header {
-    margin-bottom: $spacing-unit;
-}
-
-.post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
-
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
-}
-
-.post-content {
-    margin-bottom: $spacing-unit;
-
     h2 {
-        font-size: 32px;
+        visibility: hidden;
+        display: none;
+        float: left;
+    }
+    p {
+        font-family: "Alegreya", san-serif;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 2em;
+        color: #e05a3c;
+        float: right;
+        margin: .175em 0 0 0;
+    }
+    span {
+        font-style: normal;
+        color: #dad0c2
+    }
 
-        @include media-query($on-laptop) {
-            font-size: 28px;
+}
+#top-rule {
+    height: 10px;
+    width: 100%;
+    background-image: url("../images/BottomDoodleRule.png");
+    background-repeat: repeat-x; 
+}
+
+#bottom-rule {
+    height: 9px;
+    width: 100%;
+    background-image: url("../images/DoodleRule_primary.png");
+    background-repeat: repeat-x;
+    margin-top: -13px;
+}
+
+
+
+/* WORK CODE */
+$total-width: 74.563em;
+$total-width-med: 44.375em;
+$total-width-lg: 50.625em;
+$column-count: 12;
+$gutter-width: 0;
+$gutter-width-med: 1.375em;
+$base-column-width: ($total-width - (($column-count - 1)*$gutter-width))/$column-count;
+$base-column-width-med: ($total-width-med - (($column-count - 1)*$gutter-width))/$column-count;
+$base-column-width-lg: ($total-width-lg - (($column-count - 1)*$gutter-width))/$column-count;
+
+@mixin breakpoint-medium {
+    @media (min-width: 700px) {
+        @content; }
+}
+
+@mixin breakpoint-large {
+    @media (min-width: 1000px) {
+        @content; }
+}
+
+.work {
+    background-color: #dad0c2;
+    display: inline-block;
+}
+
+
+
+
+@mixin grid($column-number) {
+  width: ($base-column-width*$column-number)+(($column-number)-1)*$gutter-width;
+  float: left;
+  box-sizing: border-box;
+  margin-right: $gutter-width;
+  
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@mixin grid-med($column-number) {
+  width: ($base-column-width-med*$column-number)+(($column-number)-1)*$gutter-width-med;
+  float: left;
+  box-sizing: border-box;
+  margin-right: $gutter-width-med;
+  
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@mixin grid-lg($column-number) {
+  width: ($base-column-width-lg*$column-number)+(($column-number)-1)*$gutter-width-med;
+  float: left;
+  box-sizing: border-box;
+  margin-right: $gutter-width-med;
+  
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.article-listed {
+  @include grid(4);
+    @include breakpoint-medium {
+        @include grid-med(4);
+    }
+    @include breakpoint-large {
+        @include grid-lg(4);
+    }
+}
+
+.master-grid {
+    display: inline;
+    .article-listed {
+        background-color: #dad0c2;
+        margin: 24px auto 0 auto;
+        .image-list {
+            margin: 0;
+            border: 9px solid #020222;
+            width: 118px;
+            height: 118px;
+            border-radius: 50%;
+            background-color: #020222;
+            overflow: hidden;
+            float: left;
+            display: inline-block;
+        }
+        #extras {
+            background-image: url("../images/Extras_sm.jpg")
+        }
+        #goodreads {
+            background-image: url("../images/Goodreads_sm.jpg")
+        }
+        #retrostream {
+            background-image: url("../images/Retrostream_sm.jpg")
+        }
+        #baked {
+            background-image: url("../images/Baked_sm.jpg")
+        }
+        #carls {
+            background-image: url("../images/Carls_sm.jpg")
+        }
+        #compaq {
+            background-image: url("../images/Compaq_sm.jpg")
+        }
+        #worldseries {
+            background-image: url("../images/WorldSeries_sm.jpg")
+        }
+        #nets {
+            background-image: url("../images/Nets_sm.jpg")
+        }
+        #falcons {
+            background-image: url("../images/Falcons_sm.jpg")
+        }
+        h3 {
+            font-family: "Alegreya";
+            weight: 700;
+            font-style: italic;
+            color: #e05a3c;
+            font-size: 1.75em;
+            text-align: left;
+            margin: 14px 0 0 8px;
+            float: left;
+            display: inline-block;
+        }
+            p {
+                width: 54%;
+                font-family: "Alegreya";
+                weight: 400;
+                font-size: 1.175em;
+                line-height: 1.175em;
+                color: #020222;
+                text-align: left;
+                margin: 0 0 0 8px;
+                float: left;
+                display: inline-block;
+            }
+    }
+}
+
+
+
+
+
+/* FOOTER CODE */
+.site-footer {
+    height: 90px;
+    width: 100%;
+}
+
+#footer-rule {
+    height: 9px;
+    width: 100%;
+    background-image: url("../images/DoodleRule_secondary.png");
+    background-repeat: repeat-x; 
+}
+
+#social-media {
+    width: 212px;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 24px;
+    display: block;
+    li {
+        float: left;
+        margin: 0 5px 0 5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* 700px BREAKPOINT */
+
+@media (min-width: 700px) {
+    header {
+        #wordmark {
+            visibility: visible;
+            display: inline;
+            margin-left: 14px;
+        }
+    }
+    .master-grid {
+        .article-listed {
+            margin: 36px auto;
+            .image-list {
+                margin: 0 auto;
+                border: 12px solid #020222;
+                width: 272px;
+                height: 272px;
+                float: none;
+                display: block;
+            }
+        #extras {
+            background-image: url("../images/Extras_lg.jpg")
+        }
+        #goodreads {
+            background-image: url("../images/Goodreads_lg.jpg")
+        }
+        #retrostream {
+            background-image: url("../images/Retrostream_lg.jpg")
+        }
+        #baked {
+            background-image: url("../images/Baked_lg.jpg")
+        }
+        #carls {
+            background-image: url("../images/Carls_lg.jpg")
+        }
+        #compaq {
+            background-image: url("../images/Compaq_lg.jpg")
+        }
+        #worldseries {
+            background-image: url("../images/WorldSeries_lg.jpg")
+        }
+        #nets {
+            background-image: url("../images/Nets_lg.jpg")
+        }
+        #falcons {
+            background-image: url("../images/Falcons_lg.jpg")
+        }
+            h3 {
+                text-align: center;
+                width: 100%;
+                margin: -130px 0 28px 0;
+                float: none;
+                display: block;
+            }
+                p {
+                    width: 226px;
+                    text-align: center;
+                    margin: -28px auto 20px auto;
+                    float: none;
+                    display: block;
+                }
         }
     }
 
-    h3 {
-        font-size: 26px;
 
-        @include media-query($on-laptop) {
-            font-size: 22px;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* 1000px BREAKPOINT */
+
+@media (min-width: 1000px) {
+    header {
+        h2 {
+            visibility: visible;
+            display: inline;
+            font-family: "Alegreya", san-serif;
+            font-style: italic;
+            font-weight: 700;
+            font-size: 2em;
+            color: #e05a3c;
+            float: left;
+            margin: .175em 0 0 .625em;
         }
     }
 
-    h4 {
-        font-size: 20px;
 
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
-    }
+
 }
